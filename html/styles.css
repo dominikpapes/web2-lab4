@@ -1,0 +1,38 @@
+/* Osnovne postavke tijela stranice */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Stilizacija naslova */
+h1 {
+    text-align: center;
+    color: #5c6bc0;
+}
+
+/* Stilizacija galerije */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Automatsko popunjavanje s minimalnom širinom od 200px po slici */
+    gap: 15px; /* Razmak između slika */
+    margin-top: 20px;
+}
+
+/* Stilizacija pojedinih slika */
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Blagi zaobljeni rubovi */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Blaga sjena oko slika */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efekt pri prelasku mišem */
+.gallery img:hover {
+    transform: scale(1.05); /* Slika se lagano poveća pri prelasku mišem */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Povećanje sjene pri hoveru */
+}
+
